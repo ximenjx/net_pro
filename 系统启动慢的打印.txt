@@ -1,0 +1,244 @@
+[16:23:23][    0.000000] Booting Linux on physical CPU 0
+[16:23:23][    0.000000] Linux version 3.4.39 (yinxinliang@Exdroid12) (gcc version 4.6.3 20120201 (prerelease) (crosstool-NG linaro-1.13.1-2012.02-20120222 - Linaro GCC 2012.02) ) #19 Mon Dec 7 15:38:12 CST 2015
+[16:23:23][    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c5387d
+[16:23:23][    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[16:23:23][    0.000000] Machine: sun8i
+[16:23:23][    0.000000] Ignoring unrecognised tag 0x00000000
+[16:23:23][    0.000000] Initialized persistent memory from 41d20800-41d307ff
+[16:23:23][    0.000000] Memory policy: ECC disabled, Data cache writeback
+[16:23:23][    0.000000] On node 0 totalpages: 65536
+[16:23:23][    0.000000] free_area_init_node: node 0, pgdat c04eee5c, node_mem_map c058a000
+[16:23:23][    0.000000]   Normal zone: 512 pages used for memmap
+[16:23:23][    0.000000]   Normal zone: 0 pages reserved
+[16:23:23][    0.000000]   Normal zone: 65024 pages, LIFO batch:15
+[16:23:23][    0.000000] script_init enter!
+[16:23:23][    0.000000] script_init exit!
+[16:23:23][    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[16:23:23][    0.000000] pcpu-alloc: [0] 0 
+[16:23:23][    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 65024
+[16:23:23][    0.000000] Kernel command line: console=ttyS0,115200 root=/dev/nor1 init=/init loglevel=8 partitions=boot@spinorp0:system@spinorp1:cfg@spinorp2:boot_logo@spinorp3:shutdown_logo@spinorp4:env@spinorp5:private@spinorp6:UDISK@spinorp7 mac_addr= uid=8882f574-3e53-45 kmemleak=on boot_type=3 fb_base=0x41b00000 config_size=49152
+[16:23:23][    0.000000] PID hash table entries: 1024 (order: 0, 4096 bytes)
+[16:23:23][    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[16:23:23][    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[16:23:23][    0.000000] Memory: 256MB = 256MB total
+[16:23:23][    0.000000] Memory: 186196k/186196k available, 75948k reserved, 0K highmem
+[16:23:23][    0.000000] Virtual kernel memory layout:
+[16:23:23][    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[16:23:23][    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[16:23:23][    0.000000]     vmalloc : 0xd0800000 - 0xff000000   ( 744 MB)
+[16:23:23][    0.000000]     lowmem  : 0xc0000000 - 0xd0000000   ( 256 MB)
+[16:23:23][    0.000000]     modules : 0xbf000000 - 0xc0000000   (  16 MB)
+[16:23:23][    0.000000]       .text : 0xc0008000 - 0xc0485000   (4596 kB)
+[16:23:23][    0.000000]       .init : 0xc0485000 - 0xc04aa000   ( 148 kB)
+[16:23:23][    0.000000]       .data : 0xc04aa000 - 0xc04ef580   ( 278 kB)
+[16:23:23][    0.000000]        .bss : 0xc04ef5a4 - 0xc05895e0   ( 617 kB)
+[16:23:23][    0.000000] NR_IRQS:544
+[16:23:23][    0.000000] 524 ahb1 set parent pll_periph0d2
+[16:23:23][    0.000000] Architected local timer running at 24.00MHz.
+[16:23:23][    0.000000] Switching to timer-based delay loop
+[16:23:23][    0.000000] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+[16:23:23][    0.000000] Console: colour dummy device 80x30
+[16:23:23][    0.000134] Calibrating delay loop (skipped), value calculated using timer frequency.. 4800.00 BogoMIPS (lpj=24000000)
+[16:23:23][    0.000152] pid_max: default: 32768 minimum: 301
+[16:23:23][    0.000275] Mount-cache hash table entries: 512
+[16:23:23][    0.000712] CPU: Testing write buffer coherency: ok
+[16:23:23][    0.000918] Setting up static identity map for 0x40361b00 - 0x40361b34
+[16:23:23][    0.001465] devtmpfs: initialized
+[16:23:23][    0.002966] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[16:23:23][    0.003091] pinctrl core: initialized pinctrl subsystem
+[16:23:23][    0.003498] NET: Registered protocol family 16
+[16:23:23][    0.003808] DMA: preallocated 128 KiB pool for atomic coherent allocations
+[16:23:23][    0.003852] script_sysfs_init success
+[16:23:23][    0.003879] sunxi_dump_init success
+[16:23:23][    0.004537] gpiochip_add: registered GPIOs 0 to 223 on device: sunxi-pinctrl
+[16:23:23][    0.005526] sunxi-pinctrl sunxi-pinctrl: initialized sunXi PIO driver
+[16:23:23][    0.005800] gpiochip_add: registered GPIOs 1024 to 1031 on device: axp-pinctrl
+[16:23:23][    0.006516] persistent_ram: uncorrectable error in header
+[16:23:23][    0.006530] persistent_ram: no valid data in buffer (sig = 0xf67effff)
+[16:23:23][    0.011452] console [ram-1] enabled
+[16:23:23][    0.011764] [sunxi-module]: [sunxi-module.0] probe success
+[16:23:23][    0.011994] axp driver uning configuration failed(838)
+[16:23:23][    0.012069] axp driver uning configuration failed(844)
+[16:23:23][    0.012200] axp driver uning configuration failed(850)
+[16:23:23][    0.012273] axp driver uning configuration failed(857)
+[16:23:23][    0.012519] script config pll_isp to 360 Mhz
+[16:23:23][    0.012613] Not Found clk pll_video in script 
+[16:23:23][    0.012690] script config pll_ve to 360 Mhz
+[16:23:23][    0.012830] Not Found clk pll_periph0 in script 
+[16:23:23][    0.012902] Not Found clk pll_de in script 
+[16:23:23][    0.013030] sunxi_default_clk_init
+[16:23:23][    0.013100] try to set pll6ahb1 to 200000000
+[16:23:23][    0.013174] Error not get clk pll6ahb1
+[16:23:23][    0.013308] Error not get clk pll6ahb1try to set ahb1 to 200000000
+[16:23:23][    0.013454] try to set apb1 to 100000000
+[16:23:23][    0.013756] ===fe3o4==== sunxi_root_procfs_attach ret:0
+[16:23:23][    0.016710] bio: create slab <bio-0> at 0
+[16:23:23][    0.017003] pwm module init!
+[16:23:23][    0.018550] SCSI subsystem initialized
+[16:23:23][    0.018887] usbcore: registered new interface driver usbfs
+[16:23:23][    0.019024] usbcore: registered new interface driver hub
+[16:23:23][    0.019273] usbcore: registered new device driver usb
+[16:23:23][    0.019456] twi_chan_cfg()341 - [twi0] has no twi_speed!
+[16:23:23][    0.019590] twi_chan_cfg()352 - [twi0] has no twi_regulator.
+[16:23:23][    0.019667] twi_chan_cfg()341 - [twi1] has no twi_speed!
+[16:23:23][    0.019798] twi_chan_cfg()352 - [twi1] has no twi_regulator.
+[16:23:23][    0.020369] axp20_board 0-0034: AXP (CHIP ID: 0x41) detected
+[16:23:23][    0.020872] Linux video capture interface: v2.00
+[16:23:23][    0.021230] gpiochip_add: gpios 1024..1028 (axp_pin) failed to register
+[16:23:23][    0.021230] axp pinctrl used,skip
+[16:23:23][    0.021230] Advanced Linux Sound Architecture Driver Version 1.0.25.
+[16:23:23][    0.021233] cfg80211: Calling CRDA to update world regulatory domain
+[16:23:23][    0.021704] Switching to clocksource arch_sys_counter
+[16:23:23][    0.025451] NET: Registered protocol family 2
+[16:23:23][    0.025816] IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+[16:23:23][    0.026330] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+[16:23:23][    0.026590] TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+[16:23:23][    0.026783] TCP: Hash tables configured (established 8192 bind 8192)
+[16:23:23][    0.026859] TCP: reno registered
+[16:23:23][    0.026993] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[16:23:23][    0.027076] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[16:23:23][    0.027473] NET: Registered protocol family 1
+[16:23:23][    0.027718] Unpacking initramfs...
+[16:23:23][    0.041643] Freeing initrd memory: 224K
+[16:23:23][    0.041973] sunxi_reg_init enter
+[16:23:23][    0.043448] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[16:23:23][    0.043572] jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[16:23:23][    0.043865] msgmni has been set to 364
+[16:23:23][    0.044697] io scheduler noop registered
+[16:23:23][    0.044837] io scheduler deadline registered
+[16:23:23][    0.044966] io scheduler cfq registered (default)
+[16:23:23][    0.045324] [DISP]disp_module_init
+[16:23:23][    0.045744] cmdline,disp=
+[16:23:23][    0.046277] rotation_sw module is config as no used
+[16:23:23][    0.046373] [DISP] disp_get_rotation_sw,line:78:disp 0 out of range? g_rot_sw=0
+[16:23:23][    0.046576] [DISP] disp_init_connections,line:289:NULL pointer: 0, 0
+[16:23:23][    0.054749] [DISP]disp_module_init finish
+[16:23:23][    0.055021] sw_uart_get_devinfo()1503 - uart1 has no uart_regulator.
+[16:23:23][    0.055463] uart1: ttyS0 at MMIO 0x1c28400 (irq = 33) is a SUNXI
+[16:23:23][    0.055546] sw_uart_pm()890 - uart1 clk is already enable
+[16:23:23][    0.055687] sw_console_setup()1233 - console setup baud 115200 parity n bits 8, flow n
+[16:23:23][    0.151588] +++ txdt200 init
+[16:23:23][    0.794417] console [ttyS0] enabled
+[16:23:23][    0.799188] sunxi_spi_chan_cfg()1376 - [spi-0] has no spi_regulator.
+[16:23:23][    0.806890] spi spi0: master is unqueued, this is deprecated
+[16:23:23][    0.813354] m25p_probe()966 - Use the Dual Mode Read.
+[16:23:23][    0.819096] NorFlash ID: 0xc84018 - 0xc840
+[16:23:23][    0.823783] m25p80 spi0.0: found gd25q128, expected at25df641
+[16:23:23][    0.830234] m25p80 spi0.0: gd25q128 (16384 Kbytes)
+[16:23:23][    0.837119] @@@[debug_jaosn]: Invalid partitions count: 4 9
+[16:23:23][    0.843782] Creating 8 MTD partitions on "spi0.0":
+[16:23:23][    0.849230] 0x000000000000-0x000000040000 : "uboot"
+[16:23:23][    0.855520] 0x000000040000-0x000000300000 : "boot"
+[16:23:23][    0.861660] 0x000000300000-0x000000930000 : "system"
+[16:23:23][    0.867813] 0x000000930000-0x000000b30000 : "cfg"
+[16:23:23][    0.873730] 0x000000b30000-0x000000b50000 : "boot_logo"
+[16:23:23][    0.880303] 0x000000b50000-0x000000b70000 : "shutdown_logo"
+[16:23:23][    0.887172] 0x000000b70000-0x000000b80000 : "env"
+[16:23:23][    0.893178] 0x000000b80000-0x000000b90000 : "private"
+[16:23:23][    0.899489] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[16:23:23][    0.926983] sunxi-ehci sunxi-ehci.1: SW USB2.0 'Enhanced' Host Controller (EHCI) Driver
+[16:23:23][    0.935969] sunxi-ehci sunxi-ehci.1: new USB bus registered, assigned bus number 1
+[16:23:24][    0.944599] sunxi-ehci sunxi-ehci.1: irq 104, io mem 0xf1c1a000
+[16:23:24][    0.970037] sunxi-ehci sunxi-ehci.1: USB 0.0 started, EHCI 1.00
+[16:23:24][    0.977186] hub 1-0:1.0: USB hub found
+[16:23:24][    0.981518] hub 1-0:1.0: 1 port detected
+[16:23:24][    0.986194] sunxi-ehci sunxi-ehci.1: remove, state 1
+[16:23:24][    0.991799] usb usb1: USB disconnect, device number 1
+[16:23:24][    1.289953] sunxi-ehci sunxi-ehci.1: USB bus 1 deregistered
+[16:23:24][    1.306323] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[16:23:24][    1.333395] sunxi-ohci sunxi-ohci.1: SW USB2.0 'Open' Host Controller (OHCI) Driver
+[16:23:24][    1.342411] sunxi-ohci sunxi-ohci.1: new USB bus registered, assigned bus number 1
+[16:23:24][    1.350981] sunxi-ohci sunxi-ohci.1: irq 105, io mem 0xf1c1a400
+[16:23:24][    1.414479] hub 1-0:1.0: USB hub found
+[16:23:24][    1.418747] hub 1-0:1.0: 1 port detected
+[16:23:24][    1.423418] sunxi-ohci sunxi-ohci.1: remove, state 1
+[16:23:24][    1.429061] usb usb1: USB disconnect, device number 1
+[16:23:24][    1.435136] sunxi-ohci sunxi-ohci.1: USB bus 1 deregistered
+[16:23:24][    1.451563] Initializing USB Mass Storage driver...
+[16:23:24][    1.457115] usbcore: registered new interface driver usb-storage
+[16:23:24][    1.463921] USB Mass Storage support registered.
+[16:23:24][    1.469309] file system registered
+[16:23:24][    1.474047] android_usb gadget: Mass Storage Function, version: 2009/09/11
+[16:23:24][    1.481841] android_usb gadget: Number of LUNs=1
+[16:23:24][    1.487046]  lun0: LUN: removable file: (no medium)
+[16:23:24][    1.492863] android_usb gadget: android_usb ready
+[16:23:24][    1.498245] sunxikbd_script_init: key para not found, used default para. 
+[16:23:24][    1.506718] sunxi-rtc sunxi-rtc: rtc core: registered sunxi-rtc as rtc0
+[16:23:24][    1.514270] sunxi cedar version 0.1 
+[16:23:24][    1.518415] [cedar]: install start!!!
+[16:23:24][    1.522729] [cedar]: install end!!!
+[16:23:24][    1.533497] pmu_pekoff_time = 6000
+[16:23:24][    1.537414] pmu_pekoff_en = 1
+[16:23:24][    1.540789] pmu_peklong_time = 1500
+[16:23:24][    1.544717] pmu_pekon_time = 1000
+[16:23:24][    1.548451] pmu_pwrok_time = 64
+[16:23:24][    1.552008] pmu_pwrnoe_time = 2000
+[16:23:24][    1.555840] pmu_hot_shutdown = 1
+[16:23:24][    1.560328] POWER20_PEK_SET:2234-->0x9d
+[16:23:24][    1.565119] POWER20_PEK_SET:2245-->0x9d
+[16:23:24][    1.569856] POWER20_PEK_SET:2254-->0x9d
+[16:23:24][    1.574597] POWER20_PEK_SET:2265-->0x9d
+[16:23:24][    1.579388] POWER20_PEK_SET:2277-->0x9d
+[16:23:24][    1.584129] POWER20_HOTOVER_CTL:2286-->0x25
+[16:23:24][    1.596208] step1 : gsensor_fetch_sysconfig_para
+[16:23:24][    1.601549] step2 : gsensor_fetch_sysconfig_para
+[16:23:24][    1.606738] step3 : gsensor_fetch_sysconfig_para
+[16:23:24][    1.611994] step4 : mir3da_init
+[16:23:24][    1.615614] i2c-core: driver [da380] using legacy suspend method
+[16:23:24][    1.622365] i2c-core: driver [da380] using legacy resume method
+[16:23:24][    1.629065]  richard mir3da_detect: mir3da_detect:bus[0] addr[0x27]
+[16:23:24][    1.636101]  richard mir3da_detect: mir3da_detect:bus[1] addr[0x27]
+[16:23:24][    1.654131] [MIR3DA] 'Find Mir3da gsensor!!
+[16:23:24][    1.659276] ParkMonitor powerOn status is 0
+[16:23:24][    1.675383] sunxi_wdt_init_module: sunxi WatchDog Timer Driver v1.0
+[16:23:24][    1.682597] sunxi_wdt_probe: devm_ioremap return wdt_reg 0xf1c20ca0, res->start 0x01c20ca0, res->end 0x01c20cbf
+[16:23:24][    1.693890] sunxi_wdt_probe: initialized (g_timeout=16s, g_nowayout=0)
+[16:23:24][    1.701541] wdt_enable, write reg 0xf1c20cb8 val 0x00000000
+[16:23:24][    1.707800] wdt_set_tmout, write 0x000000b0 to mode reg 0xf1c20cb8, actual timeout 16 sec
+[16:23:24][    1.717144] [cpu_freq] ERR:get cpu extremity frequency from sysconfig failed, use max_freq
+[16:23:24][    1.726671] [mmc]: SD/MMC/SDIO Host Controller Driver(v1.114 2015-6-2 10:21) Compiled in Dec  7 2015 at 15:37:34
+[16:23:24][    1.738136] [mmc]: get mmc0's sdc_power failed
+[16:23:24][    1.743155] [mmc]: get mmc1's sdc_power failed
+[16:23:24][    1.748153] [mmc]: MMC host used card: 0x3, boot card: 0x0, io_card 2
+[16:23:24][    1.756076] [mmc]: sdc0 set ios: clk 0Hz bm OD pm OFF vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[16:23:24][    1.769156] [mmc]: sdc1 set ios: clk 0Hz bm OD pm OFF vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[16:23:24][    1.781967] no led_3, ignore it!
+[16:23:24][    1.785615] no led_4, ignore it!
+[16:23:24][    1.789269] no led_5, ignore it!
+[16:23:24][    1.792927] no led_6, ignore it!
+[16:23:24][    1.796625] no led_7, ignore it!
+[16:23:24][    1.800443] Registered led device: led_0
+[16:23:24][    1.804950] Registered led device: led_1
+[16:23:24][    1.809475] Registered led device: led_2
+[16:23:24][    1.814103] usbcore: registered new interface driver usbhid
+[16:23:24][    1.820441] usbhid: USB HID core driver
+[16:23:24][    1.825174] ashmem: initialized
+[16:23:24][    1.828805] logger: created 256K log 'log_main'
+[16:23:24][    1.834069] logger: created 32K log 'log_events'
+[16:23:24][    1.839357] logger: created 32K log 'log_radio'
+[16:23:24][    1.844534] logger: created 32K log 'log_system'
+[16:23:24][    1.850884] [audiocodec] mic1_mic3_used type err! 
+[16:23:24][    1.856952] asoc: sndcodec <-> sunxi-codec mapping ok
+[16:23:24][    1.866424] asoc: snddaudio <-> pri_dai mapping ok
+[16:23:24][    1.872793] IPv4 over IPv4 tunneling driver
+[16:23:24][    1.878079] TCP: cubic registered
+[16:23:24][    1.881928] Initializing XFRM netlink socket
+[16:23:24][    1.886944] NET: Registered protocol family 10
+[16:23:24][    1.892770] IPv6 over IPv4 tunneling driver
+[16:23:24][    1.898119] NET: Registered protocol family 17
+[16:23:24][    1.903367] ThumbEE CPU extension supported.
+[16:23:24][    1.908263] Registering SWP/SWPB emulation handler
+[16:23:24][    1.914047] [HDMI]ep952_module_init begin
+[16:23:24][    1.920456] sunxi-rtc sunxi-rtc: setting system clock to 1970-01-01 00:00:03 UTC (3)
+[16:23:24][    1.930391] [rf_pm]: Did not config module_power1 in sys_config
+[16:23:25][    1.937159] [rf_pm]: Did not config module_power2 in sys_config
+[16:23:25][    1.943828] [rf_pm]: Did not config module_power3 in sys_config
+[16:23:25][    1.950527] [rf_pm]: mod has no chip_en gpio
+[16:23:25][    1.955332] [rf_pm]: regulator on.
+[16:23:25][    1.959200] [rf_pm]: Get ap 32k clk out failed!
+[16:23:25][    1.964600] [wifi_pm]: wifi gpio init is OK !!
+[16:23:25][    1.969661] ALSA device list:
+[16:23:25][    1.973059]   #0: audiocodec
+[16:23:25][    1.976375]   #1: snddaudio
+[16:23:25][    1.979824] sw_uart_set_termios()749 - uart1 write LCR(pre-dlab) failed, lcr 93 reg 13
+[16:23:25][    1.988956] Freeing init memory: 148K
